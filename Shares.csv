@@ -1,0 +1,346 @@
+﻿Date,ShareLink,ShareCommentary,SharedUrl,MediaUrl,Visibility
+11/3/2017 19:44,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6332301149105909760,,https://www.udacity.com/course/nd002,,MEMBER_NETWORK
+2/25/2023 19:47,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7035334453539348480,View my verified achievement from Microsoft.,https://www.credly.com/badges/aa80bc23-f17a-46b0-9375-d95226902229/linked_in?t=rqniyz,https://images.credly.com/images/59a19ea5-a54e-4d0d-9bcc-811f363ca12a/standard_blob.png,MEMBER_NETWORK
+2/25/2023 19:48,https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7035334781496172544,Iâ€™m happy to share that Iâ€™ve obtained a new certification: Microsoft Certified: Azure Data Engineer Associate from Microsoft!,,,MEMBER_NETWORK
+5/10/2023 4:19,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7061917580558544896,,,,MEMBER_NETWORK
+6/24/2023 4:54,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7078233894910644225,Happy Weekend all,,,MEMBER_NETWORK
+7/9/2023 22:36,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7083937018296074240,"Today I earned my ""Get started with Microsoft Fabric"" badge! Iâ€™m so proud to be celebrating this achievement and hope this inspires you to start your own @MicrosoftLearn journey!",,,MEMBER_NETWORK
+10/2/2023 17:53,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7114668690549182466,CommunityAmerica Credit Union,,,MEMBER_NETWORK
+2/1/2024 13:08,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7158808452117536769,Just renewed my Microsoft Certified: Azure Data Engineer Associate. Keep it active ðŸ’ª,,,MEMBER_NETWORK
+2/3/2024 15:37,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7159570565568110592,Jordan Williams is #hiring. Know anyone who might be interested?,,,MEMBER_NETWORK
+6/12/2024 15:28,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7206678668255907841,Just finished Prepare for the Databricks Certified Data Engineer Associate Certification! Check it out: https://lnkd.in/gmmtJFxf,,,MEMBER_NETWORK
+8/9/2024 3:36,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7227518054937636864,"SQL vs. Databricks (PySpark): A Quick Syntax Cheat Sheet for Data Professionals ðŸ¤“""
+""""
+""Switching between SQL and Databricks (PySpark) for your data analysis? Here's a handy comparison to help you navigate the syntax differences:""
+""""
+""#SQL #Databricks",,,MEMBER_NETWORK
+8/10/2024 3:49,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7227883716310679552,"Bronze Layer Bliss: Simplifying Data Ingestion with Databricks Auto Loader âœ¨""
+""""
+""Leveraging Databricks Delta Live Tables (DLT) has been a game-changer for my data pipelines. I recently faced the challenge of ingesting files into our data lake's bronze layer, and Auto Loader proved to be the perfect solution! ðŸš€""
+""""
+""Python""
+""def bronze_table():""
+""    df = spark.readStream.format(""cloudFiles"") \""
+""        .option(""cloudFiles.format"", ""avro"") \""
+""        .load(source_path)""
+""    return df""
+""""
+""With just a few lines of code, Auto Loader's seamless handling of new files and schema evolution has freed us from the burdens of manual scripts, checkpointing, and other time-consuming tasks.""
+""This efficient and reliable ingestion process ensures that data flows smoothly into our Bronze Layer, the foundation of our data lakehouse.""
+""While Auto Loader simplifies the ingestion process, DLT provides a powerful framework for defining and managing the entire pipeline.""
+""""
+""For instance, dlt.apply_changes enables easy implementation of Slowly Changing Dimensions (SCD) Type 2 operations directly within our DLT pipeline.""
+""I'm excited to further leverage DLT's capabilities to build even more complex pipeline components and data transformations!""
+""""
+""#Databricks #DLT #AutoLoader #DataIngestion #DataEngineering #DataLakehouse",,,MEMBER_NETWORK
+8/12/2024 2:30,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7228588580435017728,"âš¡ Automating Power BI Dataset Refreshes with Logic Apps""
+""""
+""Keeping your Power BI dashboards up-to-date just got way easier! ðŸ“ˆ I recently streamlined our dataset refresh process using the magic of Logic Apps.""
+""""
+""Here's how it works:""
+""""
+""Trigger: Our orchestration tool kicks off the Logic App after each data load.""
+""Action: The Logic App loops through our Power BI datasets, initiating refreshes for each one. ðŸ”„""
+""Smart Monitoring: It intelligently checks the refresh status using the Power BI REST API. ðŸ§""
+""Instant Alerts: Any failures trigger an immediate alert to our Teams channel, so we can take action right away. ðŸš¨""
+""""
+""#PowerBI #LogicApps #Automation #DataFreshness #DatasetRefresh",,,MEMBER_NETWORK
+8/14/2024 1:49,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7229303078426976257,"DAX Dilemma: Ever Faced Mismatched Totals in Your Measures? ðŸ¤¯ SUMX to the Rescue!""
+""""
+""ðŸ˜• Ever noticed that the total for a measure doesn't quite match the sum of its individual rows? That's because the measure is calculated again for the total row, not simply the sum of all rows.""
+""""
+""The solution? SUMX! It forces calculations at the row level before aggregating, ensuring your measure totals are always accurate and reliable.""
+""See the difference in the image below (using a simple SUM vs. SUMX example):""
+""""
+""#PowerBI #DAX #DataAnalysis #ProTip",,,MEMBER_NETWORK
+8/15/2024 3:03,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A7044693-7229684202340806656,,,,MEMBER_NETWORK
+8/15/2024 12:27,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A7044693-7229826148409430016,,,,MEMBER_NETWORK
+8/18/2024 0:17,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A8256390-7230729462282080256,"âš¡ Automating Power BI Dataset Refreshes with Logic Apps""
+""""
+""Keeping your Power BI dashboards up-to-date just got way easier! ðŸ“ˆ I recently streamlined our dataset refresh process using the magic of Logic Apps.""
+""""
+""Here's how it works:""
+""""
+""Trigger: Our orchestration tool kicks off the Logic App after each data load.""
+""Action: The Logic App loops through our Power BI datasets, initiating refreshes for each one. ðŸ”„""
+""Smart Monitoring: It intelligently checks the refresh status using the Power BI REST API. ðŸ§""
+""Instant Alerts: Any failures trigger an immediate alert to our Teams channel, so we can take action right away. ðŸš¨""
+""""
+""#PowerBI #LogicApps #Automation #DataFreshness #DatasetRefresh",,,MEMBER_NETWORK
+8/18/2024 3:26,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7230777062121205760,"Exploring New Datasets? ðŸ” PySpark's inferSchema=True Makes it a Breeze!""
+""""
+""Diving into unfamiliar data? ðŸ¤¿ No need to stress about manually defining schemas in PySpark!""
+""""
+""Simply set inferSchema=True when reading your data, and PySpark will automatically detect column types, saving you precious time. ðŸš€""
+""""
+""#PySpark #DataExploration #DataScience #DataEngineering #ProductivityTip",,,MEMBER_NETWORK
+8/21/2024 0:36,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7231821316750766081,Jordan Williams is #hiring. Know anyone who might be interested?,,,MEMBER_NETWORK
+8/21/2024 3:30,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7231865193666912257,"Databricks Assistant: My New AI-Powered Co-Pilot for Data Work ðŸš€""
+""""
+""Say goodbye to endless Googling and head-scratching over complex code in Databricks! ðŸ‘‹ The AI-powered Assistant is my new best friend.""
+""I simply highlight a cell and ask it to ""Explain this code."" It instantly provides clear, step-by-step explanations, making even the trickiest logic easy to understand.  ðŸ¤¯""
+""""
+""This has been a game-changer for:""
+"" * Understanding legacy code""
+"" * Learning new concepts""
+"" * Debugging and troubleshooting""
+""""
+""Databricks Assistant has transformed my workflow, boosting both productivity and confidence!  ðŸ™Œ""
+""""
+""#Databricks #AI #DataEngineering #Productivity #CodeComprehension",,,MEMBER_NETWORK
+8/25/2024 2:55,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7233306027004215297,"Beyond the Basics:  Unlock the Hidden Power of Power BI Bookmarks ðŸ—ï¸""
+""""
+""Bookmarks are your secret weapon for creating truly interactive Power BI reports!  Sure, they can save specific views, but did you know they can do SO much more? ðŸ¤¯""
+""""
+""Here are some advanced bookmark tricks to elevate your dashboards:""
+"" * Reset to Default: Use bookmarks to instantly reset filters or slicers to their original state, giving your users a clean slate to explore the data. ðŸ”„""
+"" * Button Magic:  Assign bookmarks to buttons for seamless navigation and interactive storytelling within your reports. ðŸ–±ï¸""
+"" * Drill-through Integration:  Combine bookmarks with drill-through actions to create guided exploration paths for your users. ðŸ”Ž""
+"" * Conditional Formatting: Use bookmarks to change the appearance of visuals based on specific criteria, adding dynamic visual cues to your reports. ðŸŒˆ""
+"" * Personalized Experiences:  Create personalized bookmarks based on user roles or preferences, tailoring the view to each individual. ðŸ‘¤""
+""""
+""Unlock the hidden potential of bookmarks and watch your Power BI reports come alive! âœ¨""
+""""
+""#PowerBI #Bookmarks #DataVisualization #ProTips #InteractiveReports",,,MEMBER_NETWORK
+8/27/2024 3:00,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A8256390-7234032002813808641,"Beyond the Basics:  Unlock the Hidden Power of Power BI Bookmarks ðŸ—ï¸""
+""""
+""Bookmarks are your secret weapon for creating truly interactive Power BI reports!  Sure, they can save specific views, but did you know they can do SO much more? ðŸ¤¯""
+""""
+""Here are some advanced bookmark tricks to elevate your dashboards:""
+"" * Reset to Default: Use bookmarks to instantly reset filters or slicers to their original state, giving your users a clean slate to explore the data. ðŸ”„""
+"" * Button Magic:  Assign bookmarks to buttons for seamless navigation and interactive storytelling within your reports. ðŸ–±ï¸""
+"" * Drill-through Integration:  Combine bookmarks with drill-through actions to create guided exploration paths for your users. ðŸ”Ž""
+"" * Conditional Formatting: Use bookmarks to change the appearance of visuals based on specific criteria, adding dynamic visual cues to your reports. ðŸŒˆ""
+"" * Personalized Experiences:  Create personalized bookmarks based on user roles or preferences, tailoring the view to each individual. ðŸ‘¤""
+""""
+""Unlock the hidden potential of bookmarks and watch your Power BI reports come alive! âœ¨""
+""""
+""#PowerBI #Bookmarks #DataVisualization #ProTips #InteractiveReports",,,MEMBER_NETWORK
+8/28/2024 3:59,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7234409172086190080,"DAX for SQL Users: A Quick Guide to Understanding the Differences ðŸ§""
+""""
+""Familiar with SQL but venturing into the world of Power BI and DAX? Don't worry, the transition is smoother than you might think!""
+""""
+""#SQL #DAX #PowerBI #DataAnalysis""
+""""
+""Here's a quick comparison to help bridge the gap:",,,MEMBER_NETWORK
+8/28/2024 15:56,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7234589634079432705,Jordan Williams is #hiring. Know anyone who might be interested?,,,MEMBER_NETWORK
+9/4/2024 4:46,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7236957653283823616,"Elevate Your Power BI Models: Unleash the Power of Calculation Groups âœ¨""
+""""
+""Calculation groups let you create a collection of reusable calculation logic that can be applied across multiple measures. This means:""
+"" * Cleaner Models""
+"" * Code Reusability""
+"" * Flexibility""
+""""
+""Imagine having a single calculation group for time intelligence functions like Year-to-Date, Quarter-to-Date, and Month-to-Date. ðŸ“…  Now, you can apply these calculations to various measures (sales, profit, etc.) with just a few clicks!""
+""""
+""Even Better: Calculation groups are now natively available in Power BI Desktop (May 2024 update or later), making them even easier to implement! ðŸŽ‰""
+""""
+""Calculation groups are a must-have tool for any Power BI developer looking to create efficient, flexible, and user-friendly models. ðŸ’ª""
+""""
+""#PowerBI #DAX #CalculationGroups #DataModeling #Productivity",,,MEMBER_NETWORK
+9/30/2024 3:14,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7246356668714758144,"Power BI Desktop Now Has a Built-in DAX Query View""
+""""
+""The Power BI Desktop update (May 2024 and later) now includes a native tab called DAX Query View, eliminating the need for external tools or workarounds! ðŸŽ‰""
+""""
+""This means you can now:""
+"" * Write and execute DAX queries directly within Power BI Desktop, streamlining your workflow.""
+"" * Quickly explore your data model and test calculations without creating visuals.""
+"" * Simplify debugging by easily identifying and fixing errors in your DAX code.""
+""""
+""No more switching between tools or struggling with complex setups!  The new DAX query view empowers you to work more efficiently and gain deeper insights into your data. ðŸš€""
+""""
+""#PowerBI #DAX #QueryView #DataAnalysis #Productivity",,,MEMBER_NETWORK
+11/12/2024 23:37,https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7262247114171138048,Iâ€™m happy to share that Iâ€™m starting a new position as Power BI Developer at LinkedIn!,,,MEMBER_NETWORK
+12/10/2024 5:40,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7272122868153348096,"Just came across this article about creating custom visuals in Power BI using Figma and DAX! ðŸ¤©""
+""""
+""https://lnkd.in/gBJ44-EV""
+""""
+""The idea of designing eye-catching visuals in Figma and then bringing them to life in Power BI with DAX is incredibly appealing.  I can already see the possibilities for creating truly unique and engaging reports. âœ¨""
+""""
+""Definitely adding this to my to-do list!""
+""""
+""#PowerBI #DataViz #Figma #DAX #CreativeReports #DataEnthusiast",,,MEMBER_NETWORK
+12/11/2024 16:32,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7272649465176498179,"âœ¨ Beyond the Dazzle: Why Data Modeling Matters in #PowerBI âœ¨""
+""""
+""Sure, those eye-catching visuals in Power BI are impressive. But don't let the âœ¨ dazzle âœ¨ distract you from the essential ingredient: a robust data model. ðŸ“Š""
+""""
+""Think of your data model as the unsung hero behind every insightful report. It's the foundation that enables you to:""
+""""
+"" * Seamlessly connect to diverse data sources ðŸ”—""
+"" * Transform raw data into meaningful insights ðŸ”„""
+"" * Clarify relationships between different data points ðŸ“Š""
+""""
+""Without a well-defined data model, your visualizations might be misleading or flat-out wrong! ðŸš« Invest the time to build a solid foundation, and your reports will be more reliable, efficient, and insightful. ðŸš€""
+""""
+""#DataModeling #DataVisualization #BusinessIntelligence""
+""",,,MEMBER_NETWORK
+12/11/2024 19:01,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7272686933422579712,"Update: All available codes are shared""
+""""
+""âœ¨ðŸŽ LinkedIn Premium Giveaway! ðŸŽâœ¨""
+""""
+""As a LinkedIn employee, I have a few 6-month Premium subscriptions to give away to my amazing network.""
+""""
+""Could Premium help you...?""
+""""
+"" * Land your dream job? ðŸš€  Unlock advanced job search tools, get noticed by recruiters, and stand out from the competition.""
+"" * Become a networking pro? ðŸ¤ Connect with key people in your industry, build deeper relationships, and expand your influence.""
+"" * Level up your skills? ðŸ’¡ Dive into LinkedIn Learning courses and gain valuable knowledge to advance your career.""
+"" * Build a powerful personal brand? âœ¨  Elevate your profile, share your expertise, and become a thought leader in your field.""
+""""
+""Comment below or send me a DM! I'd love to share one with you.""
+""""
+""#LinkedInPremium #CareerGrowth #Networking #OpportunityKnocks""
+""""
+""Thanks #PixelStudio for the Image ðŸ‘""
+""""
+""#AI #GooglePixel",,,MEMBER_NETWORK
+12/12/2024 4:30,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A8256390-7272830219030261761,"Data Modeling in #PowerBI: It's More Than Just Connecting Tables""
+""""
+""Think data modeling in Power BI is just about linking tables together? Think again! It's the brain behind your reports, ensuring your data is organized, accurate, and efficient. ðŸ§ ""
+""""
+""A well-defined data model:""
+"" * Tells a story:  It reveals the hidden relationships within your data, allowing you to uncover meaningful insights.""
+"" * Guarantees accuracy:  No more second-guessing your numbers or questioning your conclusions.""
+"" * Optimizes performance:  Your reports run smoothly, even with massive datasets.""
+""""
+""But it's not a one-time task! Data modeling is an iterative journey of continuous improvement. Embrace the process of refining and adapting your model as your understanding of the data evolves.""
+""""
+""#PowerBI #DataModeling #DataFoundations #IterativeApproach""
+""",,,MEMBER_NETWORK
+12/13/2024 5:11,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A8256390-7273202926204985346,"DAX: Beyond Calculations - The Data Modeling Powerhouse in #PowerBIDAX is more than just a formula language for crunching numbers in Power BI. It's a versatile tool that plays a crucial role in shaping your data model and unlocking deeper insights.""
+""""
+""With DAX, you can: ""
+""* Craft calculated columns that add new dimensions to your data. ""
+""* Define custom measures that go beyond basic aggregations. ""
+""* Build dynamic relationships that adapt to your analytical needs.""
+""""
+""By mastering DAX, you're not just calculating; you're shaping the very structure of your Power BI reports. ""
+""""
+""#PowerBI #DataModeling #DAX",,,MEMBER_NETWORK
+12/14/2024 17:49,https://www.linkedin.com/feed/update/urn%3Ali%3AgroupPost%3A8256390-7273756020135342081,"Virtual Tables in #PowerBI: Unlocking a New Dimension of Data ModelingWant to perform complex calculations without changing your core data model? ""
+""""
+""Virtual tables in Power BI are your secret weapon!These dynamic tables, created with DAX, exist only in memory.They allow you to:""
+""""
+""* Perform on-the-fly calculations and aggregations.""
+""* Create custom summaries and groupings.""
+""* Simplify complex measures and relationships.""
+""""
+""Example:CALCULATE(    SUM('Internet Sales'[OrderQuantity]),    FILTER(        'Product',        'Product'[List Price] >= 1000    ))""
+""""
+""This DAX expression calculates the total order quantity for products with a list price greater than or equal to $1,000. It uses the FILTER() function to create a virtual table containing only the products that meet the specified criteria.""
+""""
+""Unlock the flexibility and power of virtual tables in your Power BI data models!""
+""""
+""#PowerBI #DataModeling #DAX #VirtualTables""
+""",,,MEMBER_NETWORK
+1/6/2025 6:15,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7281916354989858817,"Supercharge your Power BI dashboards with Field Parameters! ðŸš€ Give your users the power to dynamically choose what they see and create a truly interactive experience. Ever wanted to give your Power BI users more control over the data they analyze? Field Parameters are the answer! This awesome feature lets you create reports where users can dynamically select the measures they want to visualize, all within a single visual. #PowerBI #Dashboards #DynamicReports""
+""""
+""Here's how to get started:""
+""Create a New Parameter: Head over to the Modeling tab and click New Parameter > Fields.""
+""Choose Your Measures: Drag and drop the measures you want to make selectable into the parameter field. Give it a user-friendly name like 'Select a Metric'.""
+""Power BI will automatically add a slicer to your page, populated with your chosen measures.""
+""Dynamic Visuals: For instance, use the parameter in the Values field of a chart instead of a static measure.""
+""""
+""I was using Buttons and Bookmarks (which involved creating multiple hidden visuals and buttons to toggle their visibility) with multiple visuals to achieve the same in the past, Field Parameters save time and get it done easier! ðŸ‘ Have you tried Field Parameters yet?",,,MEMBER_NETWORK
+1/14/2025 4:20,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7284786438536151040,"Data visualization is the art of translating complex data into compelling visuals that inform, engage, and inspire action. But beware of the 'chartjunk' â€“ focus on clarity, accuracy, and impact.""
+""""
+""#DataViz #DataStorytelling #ChartJunk #VisualCommunication #DataArt""
+""",,,MEMBER_NETWORK
+1/17/2025 18:47,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7286091821561036800,"The deeper your understanding of the business and its data, the more ignited your curiosity becomes, leading to truly innovative solutions and a genuine passion for problem-solving.""
+""""
+""#DataImagination #ThinkOutsideTheBox #DataCuriosity #PassionForData #BusinessAcumen",,,MEMBER_NETWORK
+2/2/2025 1:10,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7291623927359885313,"Level Up Your Power BI Game with Visual Calculations ðŸš€""
+""""
+""Perform advanced calculations directly within your visuals for faster insights and unparalleled flexibility.""
+""""
+"" * Calculate Running Totals for sales trends.""
+"" * Smooth out data fluctuations with Moving Averages.""
+"" * Determine Percentage of Total contributions instantly.""
+""""
+"" * Speed: Get results instantly without waiting for data model updates.""
+"" * Flexibility: Experiment with different calculations on the fly.""
+""""
+""#PowerBI #VisualCalculations #DataInsights #BusinessIntelligence #DataVisualization #BI #Analytics #DataAnalysis #PowerBICommunity",,,MEMBER_NETWORK
+2/23/2025 5:02,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7299292440216186881,"There's a lot of talk about whether ""AI will replace humans."" But it's becoming increasingly clear to me that, deep down, ""humans know AI will replace humans."" I'm a firm believer in the idea that back in days I used to tell ""everything is available, you have to search better to get the correct answer,"" and now we need to think how AI can help do our jobs better and faster ðŸ˜Ž. ""
+""""
+""Like I use AI to tune this post with my core idea ðŸ’¡ #AI #FutureTech",,,MEMBER_NETWORK
+3/4/2025 5:46,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7302565047657013249,"Power BI Pro Tip: Running into extra rows when using an IF statement in a DAX measure? ðŸ¤” I did!""
+""""
+""Try a visual calculation instead, using the same logic. Visual calculations operate on the aggregated data, so they won't create those phantom rows. ðŸ‘""
+""""
+""#PowerBI #DataAnalysis #Visualizations #DAXTips #VisualCalc #DataInsights",,,MEMBER_NETWORK
+3/23/2025 16:45,https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7309616219127435264,"ðŸš€ Excited to share my first Power BI video! Discover how Calculation Groups empower precise filtering in your reports. ðŸ“Š""
+""""
+""Your feedback and topic ideas are welcome.""
+""""
+""#PowerBI #DataAnalysis #BusinessIntelligence #DAX #CalculationGroups #Tutorial",,,MEMBER_NETWORK
+3/30/2025 4:25,https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7311966661807353856,"Elevate Your Power BI Reports: Mastering Custom Tooltips""
+""""
+""",,,MEMBER_NETWORK
+4/28/2025 13:25,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7322611923781304320,"Boost Efficiency: Bulk Update Measures with TMDL View in Power BI Desktop""
+""""
+""Tired of updating Power BI measures one by one? Discover the Tabular Model Definition Language (TMDL) view â€“ an inbuilt, text-based representation of your dataset within Power BI Desktop, showing you the structure of your tables and measures.""
+""Using the TMDL view helps you:""
+"" * Clarity: Easily see and understand how your measures are defined.""
+"" * Time Savings: Get a consolidated view of your measures, making it quicker to identify and plan updates.""
+"" * Advanced Options: Lay the groundwork for more powerful bulk editing using external tools if needed.""
+""""
+""Imagine reviewing the definitions of all your sales-related measures in one place! The TMDL view provides this transparency, leading to more efficient management.""
+""""
+""Unlock a deeper understanding of your Power BI model.""
+""""
+""#PowerBI #TMDL #DataModeling #BI #DataAnalytics #Efficiency #PowerBIDesktop""
+""",,,MEMBER_NETWORK
+8/25/2025 4:49,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7365606320365858817,"The Power BI REST API is a game-changer for automation. It can be used to automate a variety of tasks, and one of my recent applications has been particularly impactful.""
+""""
+""â€‹I've switched to using the API to trigger full refreshes on incremental tables. Unlike traditional methods like SSMS, which require you to wait for a synchronous process to complete, this approach is asynchronous and far more efficient. It allows for a truly automated workflow without the wait.""
+""""
+""â€‹#PowerBI #DataAnalytics #DataEngineering #Automation #MicrosoftFabric #SQL",,,MEMBER_NETWORK
+8/27/2025 4:56,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7366332700225380354,"Remember when we had to get creative with PL/SQL or other workarounds just to enable a simple data write-back from a report? Iâ€™ve been there, and it wasnâ€™t easy.""
+""""
+""â€‹Now, Microsoft Fabric has a native solution for that exact problem: translytical task flows.""
+""""
+""â€‹I haven't had a chance to try it yet, but it looks like it will solve this case easily, and I can't wait to check this out in action. I'm excited by the idea of a truly native, built-in feature for something that used to require a complex workaround.""
+""""
+""â€‹#MicrosoftFabric #PowerBI #DataAnalytics #DataEngineering #WriteBack #Translytical",,,MEMBER_NETWORK
+9/25/2025 4:45,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7376839141247913984,"Saw the new ""Databricks One"" option pop up when logging into my workspaceâ€”it's interesting!""
+""""
+""I haven't had a chance to play around with it yet, but it looks like a major step toward making the Databricks Lakehouse truly accessible to non-technical business users.""
+""""
+""The core idea seems to be: no clusters, no code, just dashboards and the AI/BI Genie to ask questions in plain English.""
+""""
+""#Databricks #DatabricksOne #DataDemocratization #BusinessIntelligence #AI",,,MEMBER_NETWORK
+10/29/2025 18:32,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7389368541088636928,"The classic trade-off: Power BI Import Mode vs. DirectQuery. ðŸ”„ When your data is huge, you choose between long, expensive refresh times or slower query performance. Itâ€™s always been the big hurdle.""
+""""
+""Direct Lake looks like it's here to finally address that. It feels incredibly promisingâ€”the architectural move to consume Delta files directly from OneLake is fundamentally sound for scale.""
+""""
+""Right now, the major limitation is that the whole model has to be Direct Lake. I'm keen to see when Microsoft opens the door for mixed-mode models (Direct Lake + Import/DirectQuery tables). That hybrid flexibility will be the true game-changer.""
+""""
+""Excited to see this in action.""
+""""
+""#MicrosoftFabric #DirectLake #PowerBI #DataEngineering",,,MEMBER_NETWORK
+12/23/2025 14:31,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7409239157006528512,"ðŸš€ Databricks + Fabric: The Zero-Copy Reality""
+""""
+""By using Native OneLake Reading and Mirroring, you can now run Databricks and Fabric as one unified ecosystem.""
+""""
+""How it helps you right now:""
+""""
+""Save on Compute: Stop paying to move data. Land it once in OneLake and use the best engine for the job.""
+""""
+""Instant Insights: Data processed in Databricks is ready for Power BI Direct Lake immediately. No more refresh delays or waiting for complex ETL pipelines. âš¡""
+""""
+""Unified Governance: Secure your data once in Unity Catalog and access it everywhere.""
+""""
+""#MicrosoftFabric #Databricks #PowerBI #DataEngineering #ZeroCopy #CloudOptimization",,,MEMBER_NETWORK
+12/26/2025 7:33,https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7410221167355195392,"Ever unzip a .pbix just to peek at the code? ðŸ•µï¸â€â™‚ï¸""
+""""
+""With .pbip, that ""hack"" becomes the standard. It turns your model into an open folder of code, unlocking the gate to:""
+""âœ… Git: True version control with line-by-line ""diffs"" for every DAX change.""
+""âœ… Automation: Scripted updates to measures, tables, parameters, or any object via TMDL. ""
+""âœ… CI/CD: Professional DevOps pipelines that treat BI as Software Engineering.""
+""""
+""The screenshot shows the new reality: human-readable metadata, organized folder structures, and total transparency.""
+""""
+""No more black boxes. Just code. ðŸš€""
+""""
+""#PowerBI #DevOps #DataEngineering #MicrosoftFabric #TMDL",,,MEMBER_NETWORK

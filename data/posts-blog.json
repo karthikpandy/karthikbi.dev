@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "the-golden-rule-of-data-transformation-go-upstream",
+    "title": "The Golden Rule of Data Transformation",
+    "description": "Why transformations belong as close to the source as possible — and what happens when they don't. A practical guide to building cleaner, more maintainable data pipelines.",
+    "tags": ["Power BI", "Databricks", "Architecture"],
+    "status": "live",
+    "date": "2025-01-15",
+    "url": "https://karthikbi.dev/the-golden-rule-of-data-transformation-go-upstream",
+    "codeSnippet": "-- Bad: transform in the report layer\nSELECT SUM(CASE WHEN status = 'active' THEN revenue END)\n\n-- Good: transform upstream in the semantic layer\nMEASURE ActiveRevenue = CALCULATE([Revenue], Status[status] = \"active\")"
+  },
+  {
+    "slug": "cicd-for-power-bi-semantic-models",
+    "title": "CI/CD for Power BI Semantic Models",
+    "description": "Setting up automated deployment pipelines for Power BI semantic models using Azure DevOps and Tabular Editor. Version control your TMDL, validate on PR, deploy on merge.",
+    "tags": ["Power BI", "CI/CD", "Azure DevOps"],
+    "status": "live",
+    "date": "2025-02-10",
+    "codeSnippet": "# azure-pipelines.yml\n- task: PowerShell@2\n  displayName: 'Deploy Semantic Model'\n  inputs:\n    script: |\n      TabularEditor.exe model.bim -D `\n        \"${{ variables.PBI_WORKSPACE }}\" `\n        \"${{ variables.DATASET_NAME }}\" -V"
+  }
+]
