@@ -5,78 +5,30 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-bg:      #0a0e1a;
-    --color-surface: #111827;
-    --color-border:  #1e2d40;
-    --color-text:    #e2e8f0;
-    --color-muted:   #64748b;
-    --color-blue:    #60a5fa;
-    --color-amber:   #f59e0b;
-    --color-purple:  #a78bfa;
-    --color-green:   #22c55e;
-  }
-
-  * {
-    border-color: #1e2d40;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
+  html { scroll-behavior: smooth; }
 
   body {
-    background-color: #0a0e1a;
-    color: #e2e8f0;
+    background-color: #f8fafc;
+    color: #111827;
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
   }
 
   ::selection {
-    background-color: rgba(96, 165, 250, 0.3);
-    color: #e2e8f0;
+    background-color: rgba(124, 123, 255, 0.15);
+    color: #111827;
   }
 
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #0a0e1a;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #1e2d40;
-    border-radius: 3px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #64748b;
-  }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #f8fafc; }
+  ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #7C7BFF; }
 }
 
 @layer components {
-  .code-label {
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
+  /* Plain editorial category style — no badge/pill, no per-category color */
+  .tag-link {
+    @apply text-blue-600 hover:underline;
   }
-
-  .card {
-    background-color: #111827;
-    border: 1px solid #1e2d40;
-    border-radius: 0.5rem;
-  }
-
-  .card:hover {
-    border-color: rgba(96, 165, 250, 0.3);
-  }
-
-  .glow-blue {
-    box-shadow: 0 0 20px rgba(96, 165, 250, 0.1);
-  }
-
-  .tag-power-bi    { background: rgba(247, 148, 29, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
-  .tag-databricks  { background: rgba(255, 58, 0, 0.15);   color: #fb7c52; border: 1px solid rgba(251, 124, 82, 0.3); }
-  .tag-fabric      { background: rgba(0, 120, 212, 0.15);  color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); }
-  .tag-cicd        { background: rgba(167, 139, 250, 0.15); color: #a78bfa; border: 1px solid rgba(167, 139, 250, 0.3); }
-  .tag-azure       { background: rgba(0, 120, 212, 0.15);  color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); }
-  .tag-default     { background: rgba(100, 116, 139, 0.15); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.3); }
 }

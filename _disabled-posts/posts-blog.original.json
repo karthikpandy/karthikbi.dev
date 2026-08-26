@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "the-golden-rule-of-data-transformation-go-upstream",
+    "title": "The Golden Rule of Data Transformation: Go Upstream",
+    "description": "How a single DAX calculated column brought down our LinkedIn refresh — and the simple rule that fixed it permanently.",
+    "tags": ["Power BI", "Databricks", "Architecture"],
+    "status": "live",
+    "date": "2026-03-30",
+    "url": "/the-golden-rule-of-data-transformation-go-upstream"
+  },
+  {
+    "slug": "cicd-for-power-bi-semantic-models",
+    "title": "CI/CD for Power BI Semantic Models: The Granular Way",
+    "description": "How we built a surgical CI/CD pipeline for a large semantic model — branch deploys, ALM Toolkit change files, and selective table refresh via the Power BI REST API.",
+    "tags": ["Power BI", "CI/CD", "Azure DevOps"],
+    "status": "live",
+    "date": "2026-04-10",
+    "url": "/cicd-for-power-bi-semantic-models"
+  }
+]

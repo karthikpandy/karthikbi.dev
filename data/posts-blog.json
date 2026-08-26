@@ -1,21 +1,92 @@
 [
   {
-    "slug": "the-golden-rule-of-data-transformation-go-upstream",
-    "title": "The Golden Rule of Data Transformation",
-    "description": "Why transformations belong as close to the source as possible — and what happens when they don't. A practical guide to building cleaner, more maintainable data pipelines.",
-    "tags": ["Power BI", "Databricks", "Architecture"],
+    "slug": "auto-detect-relationships-cardinality",
+    "title": "Auto-Detect Guessed My Cardinality, and Guessed It Wrong",
+    "description": "Power BI's auto-detected relationship looked right for weeks — 1-to-1, bidirectional — until a customer placed a second order and refresh failed outright.",
+    "tags": ["Power BI", "Data Modeling"],
     "status": "live",
-    "date": "2025-01-15",
-    "url": "https://karthikbi.dev/the-golden-rule-of-data-transformation-go-upstream",
-    "codeSnippet": "-- Bad: transform in the report layer\nSELECT SUM(CASE WHEN status = 'active' THEN revenue END)\n\n-- Good: transform upstream in the semantic layer\nMEASURE ActiveRevenue = CALCULATE([Revenue], Status[status] = \"active\")"
+    "date": "2026-06-01",
+    "url": "/auto-detect-relationships-cardinality"
   },
   {
-    "slug": "cicd-for-power-bi-semantic-models",
-    "title": "CI/CD for Power BI Semantic Models",
-    "description": "Setting up automated deployment pipelines for Power BI semantic models using Azure DevOps and Tabular Editor. Version control your TMDL, validate on PR, deploy on merge.",
-    "tags": ["Power BI", "CI/CD", "Azure DevOps"],
+    "slug": "text-typed-dates",
+    "title": "A Text-Typed Date Column Doesn't Announce Itself as Broken",
+    "description": "OrderDate came in as text. Nothing errored — the line chart just sorted Aug → Jul → Jun, and Relative date was missing from the filter pane entirely.",
+    "tags": ["Power BI", "Power Query"],
     "status": "live",
-    "date": "2025-02-10",
-    "codeSnippet": "# azure-pipelines.yml\n- task: PowerShell@2\n  displayName: 'Deploy Semantic Model'\n  inputs:\n    script: |\n      TabularEditor.exe model.bim -D `\n        \"${{ variables.PBI_WORKSPACE }}\" `\n        \"${{ variables.DATASET_NAME }}\" -V"
+    "date": "2026-06-09",
+    "url": "/text-typed-dates"
+  },
+  {
+    "slug": "implicit-measures-meaningless-total",
+    "title": "Sum of UnitPriceDiscount Showed $8.4 — A Number That Means Nothing",
+    "description": "Drag a discount rate into a table and Power BI sums it by default. The total row read $8.4, formatted as currency, looking exactly like something you would trust.",
+    "tags": ["Power BI", "DAX", "Data Modeling"],
+    "status": "live",
+    "date": "2026-06-16",
+    "url": "/implicit-measures-meaningless-total"
+  },
+  {
+    "slug": "disable-auto-date-time",
+    "title": "One Checkbox, 55KB, and Only Two Date-Heavy Tables",
+    "description": "Auto Date/Time builds a hidden Year/Quarter/Month/Day hierarchy for every date column whether you ask for it or not. On a two-table model that was 55KB — about 15%.",
+    "tags": ["Power BI", "Performance"],
+    "status": "live",
+    "date": "2026-06-23",
+    "url": "/disable-auto-date-time"
+  },
+  {
+    "slug": "field-parameters-vs-bookmarks",
+    "title": "I Built the Same View-Switcher Two Ways: Bookmarks vs Field Parameters",
+    "description": "Bookmarks won on setup speed. Field parameters won on object count, on what actually gets swapped, and on every view I added afterward.",
+    "tags": ["Power BI", "Data Modeling"],
+    "status": "live",
+    "date": "2026-06-30",
+    "url": "/field-parameters-vs-bookmarks"
+  },
+  {
+    "slug": "calculated-columns-vs-measures-at-scale",
+    "title": "One Calculated Column Cost 1.4MB on a 10.9M-Row Table. The Measure Cost Nothing.",
+    "description": "On sample data the difference is invisible. At 10.9 million rows, a single calculated column added over a megabyte to the file — and the identical logic as a measure added zero.",
+    "tags": ["Power BI", "DAX", "Performance"],
+    "status": "live",
+    "date": "2026-07-07",
+    "url": "/calculated-columns-vs-measures-at-scale"
+  },
+  {
+    "slug": "testing-the-avoid-sumx-rule",
+    "title": "I Tested \"Avoid SUMX\" Against 10.9 Million Rows. It Went Both Ways.",
+    "description": "Combining three columns, SUMX beat three separate SUMs by nearly 7x — 303ms vs 2015ms. With nothing to fold, plain SUM won. The difference is predictable.",
+    "tags": ["Power BI", "DAX", "Performance"],
+    "status": "live",
+    "date": "2026-07-14",
+    "url": "/testing-the-avoid-sumx-rule"
+  },
+  {
+    "slug": "sumx-for-a-correct-total-row",
+    "title": "The Total Row Said $111,270.85. The Real Answer Was $146,626.18.",
+    "description": "A measure's total row doesn't sum what's on screen — it re-evaluates in its own filter context. For a table of daily maximums, that's a different number, and it's wrong for what it claims to be.",
+    "tags": ["Power BI", "DAX"],
+    "status": "live",
+    "date": "2026-07-21",
+    "url": "/sumx-for-a-correct-total-row"
+  },
+  {
+    "slug": "copilot-synonyms-vs-descriptions",
+    "title": "Copilot Ignored a Real Field Twice. A Description Didn't Help. Synonyms Did.",
+    "description": "'Extra' is an ambiguous field name. Copilot grabbed the wrong field, then grabbed another wrong one after I added a description. Synonyms were the only lever that worked.",
+    "tags": ["Power BI", "Copilot"],
+    "status": "live",
+    "date": "2026-07-29",
+    "url": "/copilot-synonyms-vs-descriptions"
+  },
+  {
+    "slug": "display-folders-field-list-hygiene",
+    "title": "18 Fields in One Flat List, Half of Them Nobody Should Touch",
+    "description": "Raw lat/long, an internal system flag, a vendor ID — all sitting in the field list next to the measures people actually need. Hiding and foldering it costs five minutes once.",
+    "tags": ["Power BI", "Data Modeling"],
+    "status": "live",
+    "date": "2026-08-05",
+    "url": "/display-folders-field-list-hygiene"
   }
 ]

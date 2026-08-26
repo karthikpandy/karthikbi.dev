@@ -5,11 +5,11 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'karthikbi.dev',
-  description: 'Building data systems that actually scale. Senior BI Engineer @ LinkedIn.',
+  description: 'Writing about BI engineering, data architecture, and the modern data stack.',
   metadataBase: new URL('https://karthikbi.dev'),
   openGraph: {
     title: 'karthikbi.dev',
-    description: 'Building data systems that actually scale. 18 years from Cognos to Microsoft Fabric.',
+    description: '18 years from Cognos to Microsoft Fabric. Sharing what I learn.',
     url: 'https://karthikbi.dev',
     siteName: 'karthikbi.dev',
     type: 'website',
@@ -17,22 +17,18 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'karthikbi.dev',
-    description: 'Building data systems that actually scale.',
+    description: 'Writing about BI engineering and the modern data stack.',
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="min-h-screen bg-bg text-text flex flex-col font-sans">
+      <body className="flex flex-col min-h-screen">
         <Nav />
         <main className="flex-1">
           {children}

@@ -1,131 +1,112 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import MetricCard from '@/components/MetricCard'
-import StackPill from '@/components/StackPill'
-import PipelineFlow from '@/components/PipelineFlow'
+import posts from '@/data/posts-blog.json'
 
-const stack = [
-  'Power BI',
-  'Microsoft Fabric',
-  'Databricks',
-  'DAX',
-  'PySpark',
-  'SQL',
-  'Azure DevOps',
-  'Informatica',
-  'Cognos',
-  'Tableau',
-]
+export const metadata = {
+  title: 'karthikbi.dev',
+  description: 'Writing about BI engineering, data architecture, and the modern data stack.',
+}
 
-const metrics = [
-  { value: '18',  label: 'years experience', accent: 'blue'   as const },
-  { value: '12+', label: 'tools mastered',   accent: 'amber'  as const },
-  { value: '3',   label: 'certifications',   accent: 'purple' as const },
-  { value: '∞',   label: 'pipelines built',  accent: 'green'  as const },
-]
+function Categories({ tags }: { tags: string[] }) {
+  return (
+    <p className="text-[13px] text-gray-400">
+      {tags.map((tag, i) => (
+        <span key={tag}>
+          {i > 0 && ', '}
+          <span className="tag-link">{tag}</span>
+        </span>
+      ))}
+    </p>
+  )
+}
 
 export default function Home() {
+  const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date))
+
   return (
-    <div className="mx-auto max-w-5xl px-6 py-20">
+    <div className="mx-auto max-w-3xl px-6 py-16">
 
-      {/* Hero */}
-      <section className="mb-20">
-        {/* Breadcrumb / status line */}
-        <div className="flex items-center gap-2 mb-8">
-          <span className="font-mono text-xs text-green">● online</span>
-          <span className="text-border">|</span>
-          <span className="font-mono text-xs text-muted">karthikbi.dev</span>
-        </div>
-
-        {/* Name */}
-        <h1 className="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold text-text mb-3 leading-tight">
-          Karthik <span className="text-blue">BI</span>
-        </h1>
-
-        {/* Title */}
-        <p className="font-mono text-lg text-muted mb-6">
-          <span className="text-amber">Senior BI Engineer</span>
-          <span className="text-muted"> @ </span>
-          <span className="text-text">LinkedIn</span>
-        </p>
-
-        {/* Tagline */}
-        <p className="text-xl text-muted max-w-2xl leading-relaxed mb-10">
-          Building data systems that actually scale.{' '}
-          <span className="text-text">18 years</span> from Cognos to Microsoft Fabric.
-        </p>
-
-        {/* CTAs */}
-        <div className="flex flex-wrap items-center gap-3">
-          <Link
-            href="/blueprints"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue/10 border border-blue/30 text-blue rounded font-mono text-sm font-medium hover:bg-blue/20 transition-colors"
-          >
-            <span>View Blueprints</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </Link>
-          <Link
-            href="/experience"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-surface border border-border text-muted rounded font-mono text-sm font-medium hover:text-text hover:border-muted transition-colors"
-          >
-            Career Timeline
-          </Link>
-        </div>
-      </section>
-
-      {/* Metrics */}
-      <section className="mb-16">
-        <h2 className="font-mono text-xs text-muted uppercase tracking-widest mb-5">
-          // by the numbers
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {metrics.map((m) => (
-            <MetricCard key={m.label} {...m} />
-          ))}
-        </div>
-      </section>
-
-      {/* Pipeline */}
-      <section className="mb-16">
-        <h2 className="font-mono text-xs text-muted uppercase tracking-widest mb-5">
-          // data pipeline
-        </h2>
-        <PipelineFlow />
-      </section>
-
-      {/* Stack */}
-      <section className="mb-16">
-        <h2 className="font-mono text-xs text-muted uppercase tracking-widest mb-5">
-          // technology stack
-        </h2>
-        <div className="flex flex-wrap gap-2">
-          {stack.map((tech) => (
-            <StackPill key={tech} label={tech} />
-          ))}
-        </div>
-      </section>
-
-      {/* Divider + blueprint teaser */}
-      <section className="border-t border-border pt-12">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="font-mono text-xs text-muted uppercase tracking-widest">
-            // latest blueprints
-          </h2>
-          <Link href="/blueprints" className="font-mono text-xs text-blue hover:underline">
-            view all →
-          </Link>
-        </div>
-        <div className="card p-5 hover:border-blue/30 transition-colors">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <p className="text-text font-semibold mb-1">CI/CD for Power BI Semantic Models</p>
-              <p className="text-muted text-sm">Automated deployment pipelines using Azure DevOps and Tabular Editor.</p>
-            </div>
-            <span className="font-mono text-xs text-green border border-green/30 bg-green/10 px-2 py-0.5 rounded whitespace-nowrap">live</span>
+      {/* Bio header — editorial */}
+      <div className="mb-10 pb-8 border-b border-gray-100">
+        <div className="flex items-start justify-between gap-5 mb-4">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Karthik BI</h1>
+            <p className="text-gray-500 text-sm mt-1.5">Senior BI Engineer · LinkedIn</p>
           </div>
+          <Image
+            src="/hero.png"
+            alt="Karthik BI"
+            width={72}
+            height={72}
+            className="rounded-full object-cover flex-shrink-0"
+          />
         </div>
-      </section>
+        <p className="text-sm text-gray-500 leading-relaxed max-w-md">
+          18 years turning data into decisions across manufacturing, finance, and tech.
+          Here I share what I learn.
+        </p>
+      </div>
+
+      {/* Section label */}
+      <p className="font-mono text-xs text-gray-400 uppercase tracking-widest mb-5">
+        Writing
+      </p>
+
+      {/* Article cards */}
+      <div className="space-y-3">
+        {sorted.map((post) => {
+          const isLive = post.status === 'live'
+
+          const inner = (
+            <div className="bg-white rounded-xl border border-gray-100 p-5 shadow-sm hover:shadow-md hover:border-gray-200 transition-all group">
+
+              {/* Title */}
+              <h2 className="text-base font-semibold text-gray-900 group-hover:text-[#7C7BFF] transition-colors leading-snug mb-1">
+                {post.title}
+              </h2>
+
+              {/* Date + status */}
+              <div className="flex items-center gap-2 mb-1.5">
+                <time className="font-mono text-[11px] text-gray-400">{post.date}</time>
+                {!isLive && (
+                  <span className="font-mono text-[11px] text-gray-400 italic">coming soon</span>
+                )}
+              </div>
+
+              {/* Categories — plain text byline, no badges */}
+              {post.tags.length > 0 && (
+                <div className="mb-2">
+                  <Categories tags={post.tags} />
+                </div>
+              )}
+
+              {/* Description — max-w-prose caps line length at ~65ch regardless of card width */}
+              <p className="text-sm text-gray-500 leading-relaxed max-w-prose">{post.description}</p>
+
+              {isLive && (
+                <p className="mt-3 text-xs font-mono text-[#7C7BFF] opacity-0 group-hover:opacity-100 transition-opacity">
+                  Read →
+                </p>
+              )}
+            </div>
+          )
+
+          const isInternal = post.url?.startsWith('/')
+          return isLive && post.url ? (
+            isInternal ? (
+              <Link key={post.slug} href={post.url} className="block">{inner}</Link>
+            ) : (
+              <a key={post.slug} href={post.url} target="_blank" rel="noopener noreferrer" className="block">{inner}</a>
+            )
+          ) : (
+            <div key={post.slug}>{inner}</div>
+          )
+        })}
+      </div>
+
+      {sorted.length === 0 && (
+        <p className="font-mono text-xs text-gray-400 py-16 text-center">// no posts yet</p>
+      )}
     </div>
   )
 }

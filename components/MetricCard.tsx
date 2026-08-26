@@ -5,11 +5,12 @@ interface MetricCardProps {
 }
 
 const accentMap = {
-  blue:   { value: 'text-blue',   bg: 'bg-blue/5',   border: 'border-blue/20' },
-  amber:  { value: 'text-amber',  bg: 'bg-amber/5',  border: 'border-amber/20' },
-  purple: { value: 'text-purple', bg: 'bg-purple/5', border: 'border-purple/20' },
-  green:  { value: 'text-green',  bg: 'bg-green/5',  border: 'border-green/20' },
+  blue:   { value: 'text-lavender', bg: 'bg-lavender/5', border: 'border-lavender/20' },
+  amber:  { value: 'text-lavender', bg: 'bg-lavender/5', border: 'border-lavender/20' },
+  purple: { value: 'text-lavender', bg: 'bg-lavender/5', border: 'border-lavender/20' },
+  green:  { value: 'text-lavender', bg: 'bg-lavender/5', border: 'border-lavender/20' },
 }
+
 
 export default function MetricCard({ value, label, accent = 'blue' }: MetricCardProps) {
   const { value: valueColor, bg, border } = accentMap[accent]
