@@ -3,7 +3,6 @@ export const metadata = {
   description: '18 years of BI engineering, from Cognos to Microsoft Fabric.',
 }
 
-
 const roles = [
   {
     period: '2024 – present', title: 'Senior BI Engineer', company: 'LinkedIn',
@@ -42,83 +41,52 @@ export default function AboutPage() {
   const years = new Date().getFullYear() - 2008
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-
-      {/* Intro — editorial */}
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold text-gray-900 tracking-tight mb-3">About</h1>
-        <p className="text-sm text-gray-500 leading-relaxed max-w-md">
+    <div className="mx-auto max-w-2xl px-6 py-14">
+      <header className="mb-10">
+        <p className="mono-label mb-3">About</p>
+        <p className="font-serif text-ink-2" style={{ fontSize: '1.075rem', lineHeight: 1.65 }}>
           Senior BI Engineer at LinkedIn. {years} years building data systems across manufacturing,
           finance, and tech — from Cognos report studios to Microsoft Fabric lakehouses.
           This site is where I share what I learn.
         </p>
-      </div>
+      </header>
 
-      {/* Stats */}
-      <div className="grid grid-cols-3 gap-3 mb-10">
-        {[
-          { value: `${years}`, label: 'years',     sub: 'in data engineering'   },
-          { value: '6',        label: 'companies', sub: 'industries crossed'     },
-          { value: '10+',      label: 'tools',     sub: 'from Cognos to Fabric'  },
-        ].map((s) => (
-          <div key={s.label} className="bg-white border border-gray-100 rounded-xl p-4 text-center shadow-sm">
-            <p className="font-mono text-3xl font-bold text-[#7C7BFF]">{s.value}</p>
-            <p className="text-sm font-medium text-gray-700 mt-0.5">{s.label}</p>
-            <p className="text-[10px] text-gray-400 mt-0.5">{s.sub}</p>
+      <p className="mono-label mb-5">Career Timeline</p>
+      <div className="border-t border-rule">
+        {roles.map((role, i) => (
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-[128px_1fr] gap-x-6 gap-y-1 py-5 border-b border-rule">
+            <time className="font-mono text-[0.63rem] uppercase tracking-label text-ink-3 tnum pt-1">
+              {role.period}
+            </time>
+            <div>
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="font-display font-semibold text-ink" style={{ fontSize: '1.05rem' }}>
+                  {role.title}
+                </span>
+                {role.current && (
+                  <span className="font-mono text-[0.6rem] uppercase tracking-label text-signal border border-signal/50 px-1.5 py-px leading-none">
+                    now
+                  </span>
+                )}
+              </div>
+              <p className="font-mono text-[0.7rem] text-ink-3 mt-0.5">{role.company}</p>
+              <p className="font-serif text-ink-2 mt-2" style={{ fontSize: '0.98rem', lineHeight: 1.6 }}>
+                {role.description}
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-2.5">
+                {role.stack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="font-mono text-[0.6rem] uppercase tracking-label text-ink-3 border border-rule-2 px-1.5 py-[3px] leading-none"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
       </div>
-
-
-      {/* Career timeline */}
-      <div>
-        <p className="font-mono text-xs text-gray-400 uppercase tracking-widest mb-5">
-          Career Timeline
-        </p>
-        <div className="relative">
-          <div className="absolute left-[7px] top-2 bottom-2 w-0.5 bg-gray-100" />
-
-          <div className="space-y-4">
-            {roles.map((role, i) => (
-              <div key={i} className="relative flex gap-4">
-                {/* Dot — violet for current, gray for past */}
-                <div className={`mt-5 w-4 h-4 rounded-full border-2 flex-shrink-0 z-10
-                  ${role.current ? 'bg-[#7C7BFF] border-violet-200' : 'bg-gray-200 border-gray-100'}`} />
-
-                {/* Card — violet left border for current, gray for past */}
-                <div className={`flex-1 bg-white border border-gray-100 border-l-4 rounded-xl p-4 shadow-sm
-                  ${role.current ? 'border-l-[#7C7BFF]' : 'border-l-gray-200'}`}>
-                  <div className="flex items-start justify-between gap-2 mb-1">
-                    <div>
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm font-semibold text-gray-900">{role.title}</span>
-                        {role.current && (
-                          <span className="font-mono text-[10px] text-[#7C7BFF] border border-violet-200 bg-violet-50 px-1.5 py-px rounded-full">
-                            now
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-xs font-medium text-gray-500 mt-0.5">{role.company}</p>
-                    </div>
-                    <time className="font-mono text-[10px] text-gray-400 whitespace-nowrap">{role.period}</time>
-                  </div>
-
-                  <p className="text-xs text-gray-500 leading-relaxed mb-2.5">{role.description}</p>
-
-                  <div className="flex flex-wrap gap-1">
-                    {role.stack.map((tech) => (
-                      <span key={tech} className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-gray-50 border border-gray-100 text-gray-500">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
     </div>
   )
 }

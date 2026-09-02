@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import PostShell from '@/components/PostShell'
 
 export const metadata = {
   title: "A Text-Typed Date Column Doesn't Announce Itself as Broken — karthikbi.dev",
@@ -37,27 +37,7 @@ function Figure({
 
 export default function TextTypedDatesPage() {
   return (
-    <article className="mx-auto max-w-3xl px-6 py-16">
-      <Link
-        href="/"
-        className="inline-flex items-center gap-1.5 font-mono text-xs text-gray-400 hover:text-gray-700 transition-colors mb-12"
-      >
-        ← Writing
-      </Link>
-
-      <header className="mb-10">
-        <h1 className="text-2xl font-bold text-gray-900 tracking-tight leading-snug mb-4">
-          A Text-Typed Date Column Doesn't Announce Itself as Broken
-        </h1>
-        <div className="flex items-center gap-3 text-gray-400 font-mono text-xs mb-2">
-          <time dateTime="2026-06-09">June 9, 2026</time>
-          <span>·</span>
-          <span>3 min read</span>
-        </div>
-        <p className="text-[13px] text-gray-400">
-          <span className="tag-link">Power BI</span>, <span className="tag-link">Power Query</span>
-        </p>
-      </header>
+    <PostShell slug="text-typed-dates">
 
       <div className="space-y-8 text-sm text-gray-600 leading-relaxed">
         <section>
@@ -166,15 +146,6 @@ export default function TextTypedDatesPage() {
           </ul>
         </section>
       </div>
-
-      <div className="mt-16 pt-8 border-t border-gray-100">
-        <Link
-          href="/"
-          className="font-mono text-xs text-gray-400 hover:text-gray-700 transition-colors"
-        >
-          ← Back to Writing
-        </Link>
-      </div>
-    </article>
+    </PostShell>
   )
 }

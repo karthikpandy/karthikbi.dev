@@ -1,34 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   Instrument Panel — design tokens
+   ============================================================ */
+
+:root {
+  --ground: #ECEFEE;
+  --panel: #FFFFFF;
+  --panel-sunk: #F5F7F6;
+  --ink: #131817;
+  --ink-2: #5F6B68;
+  --ink-3: #8B9793;
+  --rule: #DBE0DE;
+  --rule-2: #BFC7C4;
+  --signal: #D6350C;
+  --signal-bg: #FDEDE8;
+  --ok: #0A7A54;
+  --ok-bg: #E7F4EE;
+  color-scheme: light;
+}
+
+/* Explicit dark selection */
+:root[data-theme="dark"] {
+  --ground: #0F1413;
+  --panel: #161C1B;
+  --panel-sunk: #121817;
+  --ink: #E8EDEB;
+  --ink-2: #97A39F;
+  --ink-3: #6D7975;
+  --rule: #262F2D;
+  --rule-2: #36413E;
+  --signal: #FF6B3D;
+  --signal-bg: #2A1710;
+  --ok: #38C68C;
+  --ok-bg: #0F241C;
+  color-scheme: dark;
+}
+
+/* System dark, unless the user forced light */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0F1413;
+    --panel: #161C1B;
+    --panel-sunk: #121817;
+    --ink: #E8EDEB;
+    --ink-2: #97A39F;
+    --ink-3: #6D7975;
+    --rule: #262F2D;
+    --rule-2: #36413E;
+    --signal: #FF6B3D;
+    --signal-bg: #2A1710;
+    --ok: #38C68C;
+    --ok-bg: #0F241C;
+    color-scheme: dark;
+  }
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
 @layer base {
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--ground);
+  }
 
   body {
-    background-color: #f8fafc;
-    color: #111827;
-    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-display), 'Instrument Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
+    text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    background-color: rgba(124, 123, 255, 0.15);
-    color: #111827;
+    background-color: var(--signal-bg);
+    color: var(--ink);
   }
 
-  ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: #f8fafc; }
-  ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
-  ::-webkit-scrollbar-thumb:hover { background: #7C7BFF; }
+  /* Visible focus rings on every interactive element */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  ::-webkit-scrollbar { width: 7px; height: 7px; }
+  ::-webkit-scrollbar-track { background: var(--ground); }
+  ::-webkit-scrollbar-thumb { background: var(--rule-2); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--ink-3); }
 }
 
-@layer components {
-  /* Plain editorial category style — no badge/pill, no per-category color */
-  .tag-link {
-    @apply text-blue-600 hover:underline;
+/* ============================================================
+   Utilities
+   ============================================================ */
+
+.tnum { font-variant-numeric: tabular-nums; }
+
+.mono-label {
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.66rem;
+  color: var(--ink-3);
+}
+
+/* ============================================================
+   Post prose — scoped presentational overrides.
+   Post body JSX is untouched; these rules restyle the
+   existing utility-classed markup under `.post`.
+   ============================================================ */
+
+.post { color: var(--ink-2); }
+
+.post .space-y-8 > section { scroll-margin-top: 5rem; }
+
+.post p,
+.post li {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.075rem;
+  line-height: 1.68;
+  color: var(--ink-2);
+  max-width: 66ch;
+}
+
+.post h2 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  max-width: 66ch;
+}
+
+.post ul { list-style: none; padding-left: 0; }
+
+/* violet takeaway dots -> signal */
+.post .rounded-full { background-color: var(--signal) !important; }
+
+.post a {
+  color: var(--signal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post strong { color: var(--ink); }
+
+/* pull-quote */
+.post blockquote {
+  border-left: 2px solid var(--signal) !important;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+.post blockquote p {
+  font-family: var(--font-serif), Georgia, serif;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* code blocks */
+.post pre {
+  background: var(--panel-sunk) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--rule) !important;
+  border-left: 2px solid var(--signal) !important;
+  border-radius: 0 !important;
+  font-family: var(--font-mono), monospace !important;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+.post pre code {
+  color: var(--ink) !important;
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  font-size: inherit !important;
+}
+
+/* inline code */
+.post :not(pre) > code {
+  font-family: var(--font-mono), monospace;
+  background: var(--panel-sunk) !important;
+  color: var(--ink-2) !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 2px !important;
+  font-size: 0.82em !important;
+  padding: 0.1em 0.35em !important;
+}
+
+/* screenshots / figures */
+.post figure { margin: 1.5rem 0; }
+.post figure > div {
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: var(--panel-sunk);
+}
+.post figcaption {
+  font-family: var(--font-mono), monospace !important;
+  font-size: 0.68rem !important;
+  line-height: 1.5;
+  color: var(--ink-3) !important;
+  border-left: 1px solid var(--rule-2);
+  padding-left: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+/* data tables */
+.post table {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.post thead th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.64rem;
+  color: var(--ink-3);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.post tbody td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.5rem 0.75rem;
+  color: var(--ink-2);
+}
+.post tbody td:last-child { text-align: right; }
+
+/* ============================================================
+   Findings-list hover instrument bar
+   ============================================================ */
+
+.finding-row { position: relative; }
+.finding-row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--signal);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.18s cubic-bezier(0.2, 0, 0, 1);
+}
+.finding-row:hover::before,
+.finding-row:focus-within::before { transform: scaleY(1); }
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+  .finding-row::before { display: none !important; }
 }

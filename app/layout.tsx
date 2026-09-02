@@ -1,7 +1,30 @@
 import type { Metadata } from 'next'
+import { Instrument_Sans, Source_Serif_4, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+const display = Instrument_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
+const serif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const mono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'karthikbi.dev',
@@ -21,18 +44,31 @@ export const metadata: Metadata = {
   },
 }
 
+// Applied before first paint so a stored theme never flashes.
+const themeScript = `
+(function(){
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') {
+      document.documentElement.setAttribute('data-theme', t);
+    }
+  } catch (e) {}
+})();
+`
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${display.variable} ${serif.variable} ${mono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-ground text-ink">
         <Nav />
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
