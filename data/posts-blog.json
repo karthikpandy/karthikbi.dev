@@ -54,15 +54,6 @@
     "url": "/calculated-columns-vs-measures-at-scale"
   },
   {
-    "slug": "testing-the-avoid-sumx-rule",
-    "title": "I Tested \"Avoid SUMX\" Against 10.9 Million Rows. It Went Both Ways.",
-    "description": "Combining three columns, SUMX beat three separate SUMs by nearly 7x — 303ms vs 2015ms. With nothing to fold, plain SUM won. The difference is predictable.",
-    "tags": ["Power BI", "DAX", "Performance"],
-    "status": "live",
-    "date": "2026-07-14",
-    "url": "/testing-the-avoid-sumx-rule"
-  },
-  {
     "slug": "sumx-for-a-correct-total-row",
     "title": "The Total Row Said $111,270.85. The Real Answer Was $146,626.18.",
     "description": "A measure's total row doesn't sum what's on screen — it re-evaluates in its own filter context. For a table of daily maximums, that's a different number, and it's wrong for what it claims to be.",

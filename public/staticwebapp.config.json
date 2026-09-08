@@ -1,4 +1,8 @@
 {
+  "routes": [
+    { "route": "/testing-the-avoid-sumx-rule", "statusCode": 404 },
+    { "route": "/testing-the-avoid-sumx-rule/", "statusCode": 404 }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/_next/*", "/images/*", "*.{css,scss,js,png,gif,ico,jpg,svg,json,xml,woff,woff2,ttf,eot}"]
