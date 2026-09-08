@@ -1,7 +1,6 @@
 {
   "routes": [
-    { "route": "/testing-the-avoid-sumx-rule", "statusCode": 404 },
-    { "route": "/testing-the-avoid-sumx-rule/", "statusCode": 404 }
+    { "route": "/testing-the-avoid-sumx-rule*", "statusCode": 404 }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
