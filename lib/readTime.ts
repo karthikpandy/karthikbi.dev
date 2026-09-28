@@ -11,4 +11,5 @@ export const readTime: Record<string, string> = {
   'sumx-for-a-correct-total-row': '3 min',
   'copilot-synonyms-vs-descriptions': '4 min',
   'display-folders-field-list-hygiene': '3 min',
+  'what-is-direct-lake': '3 min',
 }

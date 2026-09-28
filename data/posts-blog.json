@@ -79,5 +79,14 @@
     "status": "live",
     "date": "2026-08-05",
     "url": "/display-folders-field-list-hygiene"
+  },
+  {
+    "slug": "what-is-direct-lake",
+    "title": "What Direct Lake Actually Is: I Added a Row and Never Refreshed the Model",
+    "description": "I inserted one row into a Fabric Warehouse table and watched a Power BI report pick it up without a manual model refresh, and what that says about how Direct Lake works.",
+    "tags": ["Microsoft Fabric", "Power BI"],
+    "status": "live",
+    "date": "2026-09-27",
+    "url": "/what-is-direct-lake"
   }
 ]
