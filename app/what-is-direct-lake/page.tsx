@@ -151,10 +151,6 @@ export default function WhatIsDirectLakePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs text-gray-400 leading-relaxed">
-            Next: what happens when Direct Lake can&rsquo;t do this and quietly switches to
-            DirectQuery.
-          </p>
         </section>
       </div>
     </PostShell>
