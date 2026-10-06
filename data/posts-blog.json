@@ -88,5 +88,14 @@
     "status": "live",
     "date": "2026-09-27",
     "url": "/what-is-direct-lake"
+  },
+  {
+    "slug": "direct-lake-fallback-to-directquery",
+    "title": "Direct Lake Gave Me the Right Number. It Just Didn't Use Direct Lake.",
+    "description": "A table based on a SQL view in a Direct Lake on SQL model returned the right total and still showed Direct Lake. Performance Analyzer showed it had gone through DirectQuery.",
+    "tags": ["Microsoft Fabric", "Power BI"],
+    "status": "live",
+    "date": "2026-10-05",
+    "url": "/direct-lake-fallback-to-directquery"
   }
 ]

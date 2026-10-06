@@ -12,4 +12,5 @@ export const readTime: Record<string, string> = {
   'copilot-synonyms-vs-descriptions': '4 min',
   'display-folders-field-list-hygiene': '3 min',
   'what-is-direct-lake': '3 min',
+  'direct-lake-fallback-to-directquery': '3 min',
 }
