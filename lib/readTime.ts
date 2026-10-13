@@ -13,4 +13,5 @@ export const readTime: Record<string, string> = {
   'display-folders-field-list-hygiene': '3 min',
   'what-is-direct-lake': '3 min',
   'direct-lake-fallback-to-directquery': '3 min',
+  'build-a-fabric-app-with-claude-code': '3 min',
 }

@@ -97,5 +97,14 @@
     "status": "live",
     "date": "2026-10-05",
     "url": "/direct-lake-fallback-to-directquery"
+  },
+  {
+    "slug": "build-a-fabric-app-with-claude-code",
+    "title": "How I Built a Fabric App on 1,851,282 Flights",
+    "description": "1,851,282 US flights, a semantic model and Claude Code. How I went from New item to a deployed Fabric App with a map, filters and animation.",
+    "tags": ["Microsoft Fabric", "Power BI"],
+    "status": "live",
+    "date": "2026-10-12",
+    "url": "/build-a-fabric-app-with-claude-code"
   }
 ]
