@@ -82,13 +82,13 @@ export default function PbipOneYearInPage() {
 
         <section className="space-y-3">
           <h2 className="text-base font-semibold text-gray-900 mb-3">
-            Other teams stopped being afraid of it
+            Anyone could explore the model without opening it
           </h2>
           <p>This is the one I didn&apos;t expect.</p>
           <p>
-            Once the model lived in Git, other teams could open it. Read a measure. Follow a
-            relationship. No fear of breaking anything, because reading code doesn&apos;t touch
-            production :)
+            Once the model lived in Git, anyone in the org could explore it. Read a measure.
+            Follow a relationship. No Power BI Desktop, no opening the main file, no risk of
+            changing anything by accident :)
           </p>
           <p>
             Then the small changes they used to ask us for started arriving as pull requests. We
