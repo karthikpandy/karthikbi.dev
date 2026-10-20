@@ -82,7 +82,7 @@ export default function PbipOneYearInPage() {
 
         <section className="space-y-3">
           <h2 className="text-base font-semibold text-gray-900 mb-3">
-            Anyone could explore the model without opening it
+            Anyone could explore the model
           </h2>
           <p>This is the one I didn&apos;t expect.</p>
           <p>
@@ -92,7 +92,7 @@ export default function PbipOneYearInPage() {
           </p>
           <p>
             Then the small changes they used to ask us for started arriving as pull requests. We
-            review it, merge it, ship it.
+            review them, merge them, ship them.
           </p>
           <p>The model stopped being something people raise a request for and wait on.</p>
         </section>
@@ -169,7 +169,7 @@ export default function PbipOneYearInPage() {
           <ul className="space-y-2 pl-0">
             {[
               'The format is the small part. Access is the big part.',
-              'Reading code without fear is what turns other teams into contributors.',
+              'A model anyone can read is what turns other teams into contributors.',
               'Plain files are context for agents and input for automation. A binary is neither.',
             ].map((point) => (
               <li key={point} className="flex items-start gap-3">
