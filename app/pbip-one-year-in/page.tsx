@@ -4,6 +4,24 @@ export const metadata = {
   title: 'A Year on PBIP: The Model Stopped Being a File — karthikbi.dev',
   description:
     'One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.',
+  alternates: {
+    canonical: 'https://karthikbi.dev/pbip-one-year-in/',
+  },
+  openGraph: {
+    title: 'A Year on PBIP: The Model Stopped Being a File',
+    description:
+      'One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.',
+    url: 'https://karthikbi.dev/pbip-one-year-in/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-10-20',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'A Year on PBIP: The Model Stopped Being a File',
+    description:
+      'One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.',
+  },
 }
 
 export default function PbipOneYearInPage() {
