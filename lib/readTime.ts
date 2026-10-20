@@ -14,4 +14,5 @@ export const readTime: Record<string, string> = {
   'what-is-direct-lake': '3 min',
   'direct-lake-fallback-to-directquery': '3 min',
   'build-a-fabric-app-with-claude-code': '3 min',
+  'pbip-one-year-in': '3 min',
 }

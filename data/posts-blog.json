@@ -106,5 +106,14 @@
     "status": "live",
     "date": "2026-10-12",
     "url": "/build-a-fabric-app-with-claude-code"
+  },
+  {
+    "slug": "pbip-one-year-in",
+    "title": "A Year on PBIP: The Model Stopped Being a File",
+    "description": "One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.",
+    "tags": ["Power BI", "Data Modeling"],
+    "status": "live",
+    "date": "2026-10-20",
+    "url": "/pbip-one-year-in"
   }
 ]
