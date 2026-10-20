@@ -19,9 +19,9 @@ export const metadata = {
     publishedTime: '2026-10-20',
     images: [
       {
-        url: `${IMG}/cover.jpg`,
-        width: 2752,
-        height: 1536,
+        url: `${IMG}/og.jpg`,
+        width: 1600,
+        height: 838,
         alt: 'A sealed block opening into a branching version-control graph',
       },
     ],
@@ -31,7 +31,7 @@ export const metadata = {
     title: 'A Year on PBIP: The Model Stopped Being a File',
     description:
       'One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.',
-    images: [`${IMG}/cover.jpg`],
+    images: [`${IMG}/og.jpg`],
   },
 }
 
