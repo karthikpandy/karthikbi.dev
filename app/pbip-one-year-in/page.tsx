@@ -6,6 +6,7 @@ export const metadata = {
   title: 'A Year on PBIP: The Model Stopped Being a File — karthikbi.dev',
   description:
     'One year on Power BI Projects (PBIP): version control, multiple developers, pull requests from other teams and AI agents reading the model for context.',
+  authors: [{ name: 'Karthik Pandy' }],
   alternates: {
     canonical: 'https://karthikbi.dev/pbip-one-year-in/',
   },
@@ -17,6 +18,7 @@ export const metadata = {
     siteName: 'karthikbi.dev',
     type: 'article',
     publishedTime: '2026-10-20',
+    authors: ['Karthik Pandy'],
     images: [
       {
         url: `${IMG}/og.jpg`,
