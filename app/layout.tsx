@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Instrument_Sans, Source_Serif_4, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
@@ -56,6 +57,14 @@ const themeScript = `
 })();
 `
 
+const clarityScript = `
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "z43qzoudvq");
+`
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -70,6 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {clarityScript}
+        </Script>
       </body>
     </html>
   )
