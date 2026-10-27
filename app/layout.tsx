@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   title: 'karthikbi.dev',
   description: 'Writing about BI engineering, data architecture, and the modern data stack.',
   metadataBase: new URL('https://karthikbi.dev'),
+  verification: {
+    google: 'aX-TACEbk5xejp-MXQlv9k205eU9jLrCaXUepO5Wit0',
+  },
   openGraph: {
     title: 'karthikbi.dev',
     description: '18 years from Cognos to Microsoft Fabric. Sharing what I learn.',
