@@ -35,7 +35,7 @@ export default function PbipGitWorkflowSkillsPage() {
           <p>Last week I wrote about moving a production model to PBIP.</p>
           <p>Git was the big win. But like most BI teams, we came from PBIX files, not Git.</p>
           <p>
-            A new format, a new tool and a new process, all at once. I wanted them to feel
+            A new format, a new tool and a new process, all at once. I wanted everyone to feel
             comfortable, and still follow the right steps every time.
           </p>
         </section>
