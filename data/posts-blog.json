@@ -115,5 +115,14 @@
     "status": "live",
     "date": "2026-10-20",
     "url": "/pbip-one-year-in"
+  },
+  {
+    "slug": "pbip-git-workflow-skills",
+    "title": "PBIP Gave Us Git. Skills Made Everyone Use It the Same Way.",
+    "description": "Most of my team were new to Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.",
+    "tags": ["Power BI"],
+    "status": "live",
+    "date": "2026-10-27",
+    "url": "/pbip-git-workflow-skills"
   }
 ]
