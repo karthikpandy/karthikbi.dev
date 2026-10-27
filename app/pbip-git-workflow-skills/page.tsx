@@ -3,7 +3,7 @@ import PostShell from '@/components/PostShell'
 export const metadata = {
   title: 'PBIP Gave Us Git. Skills Made Everyone Use It the Same Way. — karthikbi.dev',
   description:
-    'Most of my team were new to Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
+    'Like most BI teams, we came from PBIX files, not Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
   authors: [{ name: 'Karthik Pandy' }],
   alternates: {
     canonical: 'https://karthikbi.dev/pbip-git-workflow-skills/',
@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'PBIP Gave Us Git. Skills Made Everyone Use It the Same Way.',
     description:
-      'Most of my team were new to Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
+      'Like most BI teams, we came from PBIX files, not Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
     url: 'https://karthikbi.dev/pbip-git-workflow-skills/',
     siteName: 'karthikbi.dev',
     type: 'article',
@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'PBIP Gave Us Git. Skills Made Everyone Use It the Same Way.',
     description:
-      'Most of my team were new to Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
+      'Like most BI teams, we came from PBIX files, not Git. So we packaged the PBIP workflow — branch, change, commit, push, PR — as skills and scripts, with the ticket number carried through to promotion.',
   },
 }
 
@@ -33,7 +33,7 @@ export default function PbipGitWorkflowSkillsPage() {
       <div className="space-y-8 text-sm text-gray-600 leading-relaxed">
         <section className="space-y-3">
           <p>Last week I wrote about moving a production model to PBIP.</p>
-          <p>Git was the big win. But most of my team were new to Git.</p>
+          <p>Git was the big win. But like most BI teams, we came from PBIX files, not Git.</p>
           <p>
             A new format, a new tool and a new process, all at once. I wanted them to feel
             comfortable, and still follow the right steps every time.
