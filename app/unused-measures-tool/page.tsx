@@ -15,7 +15,7 @@ export const metadata = {
     url: 'https://karthikbi.dev/unused-measures-tool/',
     siteName: 'karthikbi.dev',
     type: 'article',
-    publishedTime: '2026-11-03',
+    publishedTime: '2026-10-26',
     authors: ['Karthik Pandy'],
   },
   twitter: {
