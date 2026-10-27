@@ -1,6 +1,5 @@
 const links = [
   { href: 'https://www.linkedin.com/in/karthikpandy', label: 'LinkedIn' },
-  { href: 'https://github.com/karthikpandy', label: 'GitHub' },
 ]
 
 export default function Footer() {
