@@ -16,4 +16,5 @@ export const readTime: Record<string, string> = {
   'build-a-fabric-app-with-claude-code': '3 min',
   'pbip-one-year-in': '3 min',
   'pbip-git-workflow-skills': '2 min',
+  'unused-measures-tool': '2 min',
 }

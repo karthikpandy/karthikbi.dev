@@ -124,5 +124,14 @@
     "status": "live",
     "date": "2026-10-27",
     "url": "/pbip-git-workflow-skills"
+  },
+  {
+    "slug": "unused-measures-tool",
+    "title": "We Built a Tool to Find Unused Measures. Then the Platform Kept Shrinking It.",
+    "description": "Hundreds of unused measures, found once a quarter by uploading files. Then PBIP, Git and a metadata database turned cleanup into a query.",
+    "tags": ["Power BI"],
+    "status": "live",
+    "date": "2026-10-26",
+    "url": "/unused-measures-tool"
   }
 ]
