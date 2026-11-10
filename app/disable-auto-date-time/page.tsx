@@ -5,6 +5,35 @@ export const metadata = {
   title: 'One Checkbox, 55KB, and Only Two Date-Heavy Tables — karthikbi.dev',
   description:
     'Auto Date/Time builds a hidden Year/Quarter/Month/Day hierarchy for every date column whether you ask for it or not. On a two-table model that was 55KB — about 15%.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/disable-auto-date-time/',
+  },
+  openGraph: {
+    title: 'One Checkbox, 55KB, and Only Two Date-Heavy Tables',
+    description:
+      'Auto Date/Time builds a hidden Year/Quarter/Month/Day hierarchy for every date column whether you ask for it or not. On a two-table model that was 55KB — about 15%.',
+    url: 'https://karthikbi.dev/disable-auto-date-time/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-06-23',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/disable-auto-date-time/default-hierarchies.png',
+        width: 426,
+        height: 944,
+        alt: 'Five separate date columns, each with its own auto-generated Date Hierarchy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'One Checkbox, 55KB, and Only Two Date-Heavy Tables',
+    description:
+      'Auto Date/Time builds a hidden Year/Quarter/Month/Day hierarchy for every date column whether you ask for it or not. On a two-table model that was 55KB — about 15%.',
+    images: ['/blog/disable-auto-date-time/default-hierarchies.png'],
+  },
 }
 
 function Figure({

@@ -2,10 +2,38 @@ import Image from 'next/image'
 import PostShell from '@/components/PostShell'
 
 export const metadata = {
-  title:
-    "Direct Lake Gave Me the Right Number. It Just Didn't Use Direct Lake. — karthikbi.dev",
+  title: "Direct Lake Gave Me the Right Number. It Just Didn't Use Direct Lake. — karthikbi.dev",
   description:
     'A table based on a SQL view in a Direct Lake on SQL model returned the right total and still showed Direct Lake. Performance Analyzer showed it had gone through DirectQuery.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/direct-lake-fallback-to-directquery/',
+  },
+  openGraph: {
+    title: "Direct Lake Gave Me the Right Number. It Just Didn't Use Direct Lake.",
+    description:
+      'A table based on a SQL view in a Direct Lake on SQL model returned the right total and still showed Direct Lake. Performance Analyzer showed it had gone through DirectQuery.',
+    url: 'https://karthikbi.dev/direct-lake-fallback-to-directquery/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-10-05',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/direct-lake-fallback-to-directquery/view-storage-mode.png',
+        width: 1161,
+        height: 509,
+        alt: 'The view-based table, storage mode Direct Lake',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Direct Lake Gave Me the Right Number. It Just Didn't Use Direct Lake.",
+    description:
+      'A table based on a SQL view in a Direct Lake on SQL model returned the right total and still showed Direct Lake. Performance Analyzer showed it had gone through DirectQuery.',
+    images: ['/blog/direct-lake-fallback-to-directquery/view-storage-mode.png'],
+  },
 }
 
 function Figure({

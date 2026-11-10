@@ -5,6 +5,35 @@ export const metadata = {
   title: '18 Fields in One Flat List, Half of Them Nobody Should Touch — karthikbi.dev',
   description:
     'Raw lat/long, an internal system flag, a vendor ID — all sitting in the field list next to the measures people actually need. Hiding and foldering it costs five minutes once.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/display-folders-field-list-hygiene/',
+  },
+  openGraph: {
+    title: '18 Fields in One Flat List, Half of Them Nobody Should Touch',
+    description:
+      'Raw lat/long, an internal system flag, a vendor ID — all sitting in the field list next to the measures people actually need. Hiding and foldering it costs five minutes once.',
+    url: 'https://karthikbi.dev/display-folders-field-list-hygiene/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-08-05',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/display-folders-field-list-hygiene/before-flat-list.png',
+        width: 372,
+        height: 579,
+        alt: '18 fields, flat list — real reportable measures mixed with raw coordinates and internal IDs',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '18 Fields in One Flat List, Half of Them Nobody Should Touch',
+    description:
+      'Raw lat/long, an internal system flag, a vendor ID — all sitting in the field list next to the measures people actually need. Hiding and foldering it costs five minutes once.',
+    images: ['/blog/display-folders-field-list-hygiene/before-flat-list.png'],
+  },
 }
 
 function Figure({

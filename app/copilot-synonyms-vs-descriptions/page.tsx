@@ -5,6 +5,35 @@ export const metadata = {
   title: "Copilot Ignored a Real Field Twice. A Description Didn't Help. Synonyms Did. — karthikbi.dev",
   description:
     "'Extra' is an ambiguous field name. Copilot grabbed the wrong field, then grabbed another wrong one after I added a description. Synonyms were the only lever that worked.",
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/copilot-synonyms-vs-descriptions/',
+  },
+  openGraph: {
+    title: "Copilot Ignored a Real Field Twice. A Description Didn't Help. Synonyms Did.",
+    description:
+      "'Extra' is an ambiguous field name. Copilot grabbed the wrong field, then grabbed another wrong one after I added a description. Synonyms were the only lever that worked.",
+    url: 'https://karthikbi.dev/copilot-synonyms-vs-descriptions/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-07-29',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/copilot-synonyms-vs-descriptions/original-failure.png',
+        width: 705,
+        height: 693,
+        alt: 'Original attempt — Copilot missed Extra entirely, returned Sum of totalAmount',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Copilot Ignored a Real Field Twice. A Description Didn't Help. Synonyms Did.",
+    description:
+      "'Extra' is an ambiguous field name. Copilot grabbed the wrong field, then grabbed another wrong one after I added a description. Synonyms were the only lever that worked.",
+    images: ['/blog/copilot-synonyms-vs-descriptions/original-failure.png'],
+  },
 }
 
 function Figure({

@@ -5,6 +5,35 @@ export const metadata = {
   title: 'Sum of UnitPriceDiscount Showed $8.4 — A Number That Means Nothing — karthikbi.dev',
   description:
     'Drag a discount rate into a table and Power BI sums it by default. The total row read $8.4, formatted as currency, looking exactly like something you would trust.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/implicit-measures-meaningless-total/',
+  },
+  openGraph: {
+    title: 'Sum of UnitPriceDiscount Showed $8.4 — A Number That Means Nothing',
+    description:
+      'Drag a discount rate into a table and Power BI sums it by default. The total row read $8.4, formatted as currency, looking exactly like something you would trust.',
+    url: 'https://karthikbi.dev/implicit-measures-meaningless-total/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-06-16',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/implicit-measures-meaningless-total/implicit-sum.png',
+        width: 1016,
+        height: 545,
+        alt: 'Implicit Sum of UnitPriceDiscount — total shows $8.4, formatted as currency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sum of UnitPriceDiscount Showed $8.4 — A Number That Means Nothing',
+    description:
+      'Drag a discount rate into a table and Power BI sums it by default. The total row read $8.4, formatted as currency, looking exactly like something you would trust.',
+    images: ['/blog/implicit-measures-meaningless-total/implicit-sum.png'],
+  },
 }
 
 function Figure({

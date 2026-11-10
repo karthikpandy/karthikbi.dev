@@ -5,6 +5,35 @@ export const metadata = {
   title: 'The Total Row Said $111,270.85. The Real Answer Was $146,626.18. — karthikbi.dev',
   description:
     "A measure's total row doesn't sum what's on screen — it re-evaluates in its own filter context. For a table of daily maximums, that's a different number, and it's wrong for what it claims to be.",
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/sumx-for-a-correct-total-row/',
+  },
+  openGraph: {
+    title: 'The Total Row Said $111,270.85. The Real Answer Was $146,626.18.',
+    description:
+      "A measure's total row doesn't sum what's on screen — it re-evaluates in its own filter context. For a table of daily maximums, that's a different number, and it's wrong for what it claims to be.",
+    url: 'https://karthikbi.dev/sumx-for-a-correct-total-row/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-07-21',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/sumx-for-a-correct-total-row/daily-max-vs-sum.png',
+        width: 1071,
+        height: 718,
+        alt: 'Max Fare Total 111,270.85 versus Sum of Daily Max Total 146,626.18',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Total Row Said $111,270.85. The Real Answer Was $146,626.18.',
+    description:
+      "A measure's total row doesn't sum what's on screen — it re-evaluates in its own filter context. For a table of daily maximums, that's a different number, and it's wrong for what it claims to be.",
+    images: ['/blog/sumx-for-a-correct-total-row/daily-max-vs-sum.png'],
+  },
 }
 
 function Figure({

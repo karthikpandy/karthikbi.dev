@@ -5,6 +5,35 @@ export const metadata = {
   title: "A Text-Typed Date Column Doesn't Announce Itself as Broken — karthikbi.dev",
   description:
     'OrderDate came in as text. Nothing errored — the line chart just sorted Aug → Jul → Jun, and Relative date was missing from the filter pane entirely.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/text-typed-dates/',
+  },
+  openGraph: {
+    title: "A Text-Typed Date Column Doesn't Announce Itself as Broken",
+    description:
+      'OrderDate came in as text. Nothing errored — the line chart just sorted Aug → Jul → Jun, and Relative date was missing from the filter pane entirely.',
+    url: 'https://karthikbi.dev/text-typed-dates/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-06-09',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/text-typed-dates/wrong-sort.png',
+        width: 959,
+        height: 408,
+        alt: 'Sum of SubTotal by OrderDate, sorted Aug → Jul → Jun alphabetically as text',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "A Text-Typed Date Column Doesn't Announce Itself as Broken",
+    description:
+      'OrderDate came in as text. Nothing errored — the line chart just sorted Aug → Jul → Jun, and Relative date was missing from the filter pane entirely.',
+    images: ['/blog/text-typed-dates/wrong-sort.png'],
+  },
 }
 
 function Figure({

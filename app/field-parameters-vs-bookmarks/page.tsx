@@ -5,6 +5,35 @@ export const metadata = {
   title: 'I Built the Same View-Switcher Two Ways: Bookmarks vs Field Parameters — karthikbi.dev',
   description:
     'Bookmarks won on setup speed. Field parameters won on object count, on what actually gets swapped, and on every view I added afterward.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/field-parameters-vs-bookmarks/',
+  },
+  openGraph: {
+    title: 'I Built the Same View-Switcher Two Ways: Bookmarks vs Field Parameters',
+    description:
+      'Bookmarks won on setup speed. Field parameters won on object count, on what actually gets swapped, and on every view I added afterward.',
+    url: 'https://karthikbi.dev/field-parameters-vs-bookmarks/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-06-30',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/field-parameters-vs-bookmarks/bookmarks-working.png',
+        width: 1395,
+        height: 486,
+        alt: 'The bookmark approach — two bookmarks, two buttons, chart swapped via bookmark actions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'I Built the Same View-Switcher Two Ways: Bookmarks vs Field Parameters',
+    description:
+      'Bookmarks won on setup speed. Field parameters won on object count, on what actually gets swapped, and on every view I added afterward.',
+    images: ['/blog/field-parameters-vs-bookmarks/bookmarks-working.png'],
+  },
 }
 
 function Figure({

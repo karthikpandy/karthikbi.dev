@@ -5,6 +5,35 @@ export const metadata = {
   title: 'What Direct Lake Actually Is: I Added a Row and Never Refreshed the Model — karthikbi.dev',
   description:
     'I inserted one row into a Fabric Warehouse table and watched a Power BI report pick it up without a manual model refresh, and what that says about how Direct Lake works.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/what-is-direct-lake/',
+  },
+  openGraph: {
+    title: 'What Direct Lake Actually Is: I Added a Row and Never Refreshed the Model',
+    description:
+      'I inserted one row into a Fabric Warehouse table and watched a Power BI report pick it up without a manual model refresh, and what that says about how Direct Lake works.',
+    url: 'https://karthikbi.dev/what-is-direct-lake/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-09-27',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/what-is-direct-lake/direct-lake-storage-mode.png',
+        width: 1194,
+        height: 719,
+        alt: 'The table shown in Direct Lake storage mode',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What Direct Lake Actually Is: I Added a Row and Never Refreshed the Model',
+    description:
+      'I inserted one row into a Fabric Warehouse table and watched a Power BI report pick it up without a manual model refresh, and what that says about how Direct Lake works.',
+    images: ['/blog/what-is-direct-lake/direct-lake-storage-mode.png'],
+  },
 }
 
 function Figure({

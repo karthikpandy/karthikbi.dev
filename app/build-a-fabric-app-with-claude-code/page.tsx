@@ -7,6 +7,7 @@ export const metadata = {
   title: 'Building a Fabric App with Claude Code: 1,851,282 Flights',
   description:
     '1,851,282 US flights, a semantic model and Claude Code. How I went from New item to a deployed Fabric App with a map, filters and animation.',
+  authors: [{ name: 'Karthik Pandy' }],
   alternates: {
     canonical: 'https://karthikbi.dev/build-a-fabric-app-with-claude-code/',
   },
@@ -18,6 +19,7 @@ export const metadata = {
     siteName: 'karthikbi.dev',
     type: 'article',
     publishedTime: '2026-10-12',
+    authors: ['Karthik Pandy'],
     images: [
       {
         url: `${IMG}/08-phase2-mci-map-panel.png`,

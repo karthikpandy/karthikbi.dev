@@ -5,6 +5,35 @@ export const metadata = {
   title: 'Auto-Detect Guessed My Cardinality, and Guessed It Wrong — karthikbi.dev',
   description:
     "Power BI's auto-detected relationship looked right for weeks — 1-to-1, bidirectional — until a customer placed a second order and refresh failed outright.",
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/auto-detect-relationships-cardinality/',
+  },
+  openGraph: {
+    title: 'Auto-Detect Guessed My Cardinality, and Guessed It Wrong',
+    description:
+      "Power BI's auto-detected relationship looked right for weeks — 1-to-1, bidirectional — until a customer placed a second order and refresh failed outright.",
+    url: 'https://karthikbi.dev/auto-detect-relationships-cardinality/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-06-01',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/auto-detect-relationships-cardinality/before-model.png',
+        width: 921,
+        height: 856,
+        alt: "Auto-detect's original relationship — one-to-one, bidirectional, between Customer and SalesOrderHeader",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Auto-Detect Guessed My Cardinality, and Guessed It Wrong',
+    description:
+      "Power BI's auto-detected relationship looked right for weeks — 1-to-1, bidirectional — until a customer placed a second order and refresh failed outright.",
+    images: ['/blog/auto-detect-relationships-cardinality/before-model.png'],
+  },
 }
 
 function Figure({

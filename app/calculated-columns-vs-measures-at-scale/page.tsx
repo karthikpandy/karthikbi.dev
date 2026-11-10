@@ -5,6 +5,35 @@ export const metadata = {
   title: 'One Calculated Column Cost 1.4MB on a 10.9M-Row Table. The Measure Cost Nothing. — karthikbi.dev',
   description:
     'On sample data the difference is invisible. At 10.9 million rows, a single calculated column added over a megabyte to the file — and the identical logic as a measure added zero.',
+  authors: [{ name: 'Karthik Pandy' }],
+  alternates: {
+    canonical: 'https://karthikbi.dev/calculated-columns-vs-measures-at-scale/',
+  },
+  openGraph: {
+    title: 'One Calculated Column Cost 1.4MB on a 10.9M-Row Table. The Measure Cost Nothing.',
+    description:
+      'On sample data the difference is invisible. At 10.9 million rows, a single calculated column added over a megabyte to the file — and the identical logic as a measure added zero.',
+    url: 'https://karthikbi.dev/calculated-columns-vs-measures-at-scale/',
+    siteName: 'karthikbi.dev',
+    type: 'article',
+    publishedTime: '2026-07-07',
+    authors: ['Karthik Pandy'],
+    images: [
+      {
+        url: '/blog/calculated-columns-vs-measures-at-scale/calccolumn-fieldlist.png',
+        width: 842,
+        height: 795,
+        alt: 'TotalCalc added as a calculated column — materialised, stored in every row',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'One Calculated Column Cost 1.4MB on a 10.9M-Row Table. The Measure Cost Nothing.',
+    description:
+      'On sample data the difference is invisible. At 10.9 million rows, a single calculated column added over a megabyte to the file — and the identical logic as a measure added zero.',
+    images: ['/blog/calculated-columns-vs-measures-at-scale/calccolumn-fieldlist.png'],
+  },
 }
 
 function Figure({
