@@ -136,7 +136,7 @@
   },
   {
     "slug": "agent-built-power-bi-report",
-    "title": "An Agent Built My Power BI Report in 38 Minutes. It Audited My Model First.",
+    "title": "I Let Agent Skills Build My Power BI Report. The Planning Was the Best Part.",
     "description": "I gave an agent Microsoft's Power BI report skill and my 1,851,282-flight model. Before building anything, it found five empty columns, a disconnected table and no month field.",
     "tags": ["Power BI", "Microsoft Fabric"],
     "status": "live",

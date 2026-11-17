@@ -3,7 +3,7 @@ import PostShell from '@/components/PostShell'
 
 const IMG = '/blog/agent-built-power-bi-report'
 
-const TITLE = 'An Agent Built My Power BI Report in 38 Minutes. It Audited My Model First.'
+const TITLE = 'I Let Agent Skills Build My Power BI Report. The Planning Was the Best Part.'
 const DESCRIPTION =
   "I gave an agent Microsoft's Power BI report skill and my 1,851,282-flight model. Before building anything, it found five empty columns, a disconnected table and no month field."
 const OG_ALT =
