@@ -198,6 +198,37 @@ export default function AgentBuiltPowerBiReportPage() {
         </section>
 
         <section className="space-y-3">
+          <h2 className="text-base font-semibold text-gray-900 mb-3">
+            Where it actually earns its place
+          </h2>
+          <p>
+            The part that usually takes the longest isn&apos;t the hard part. It&apos;s the blank
+            page.
+          </p>
+          <p>
+            Picking a layout. Placing every visual. Wiring every field. Setting up filters, alt
+            text, a theme. None of it is difficult, and all of it takes time before you can even
+            start deciding whether the report is any good.
+          </p>
+          <p>
+            The skill handled that part. I described what I had in mind, and in minutes I was
+            looking at it, close enough to react to.
+          </p>
+          <p>
+            From there, the work was mine again: tuning, adjusting, deciding what matters. I
+            wasn&apos;t building from scratch. I was editing a first draft.
+          </p>
+        </section>
+
+        <section>
+          <blockquote className="border-l-4 border-[#7C7BFF] pl-4 my-5">
+            <p className="text-gray-700 font-medium">
+              It doesn&apos;t replace the report developer. It replaces the blank page.
+            </p>
+          </blockquote>
+        </section>
+
+        <section className="space-y-3">
           <h2 className="text-base font-semibold text-gray-900 mb-3">Caveats</h2>
           <Bullets
             items={[
@@ -213,7 +244,7 @@ export default function AgentBuiltPowerBiReportPage() {
           <Bullets
             items={[
               'An agent is only as good as what it can see. Getting it signed in to the right place was half the work.',
-              "The planning step was worth more than the build. It found model problems I didn't know about.",
+              'It gives you a solid first draft fast. The tuning is still yours.',
               '"Validated" proved less than "looked at". Always check the first render.',
             ]}
           />
