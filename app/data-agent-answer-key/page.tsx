@@ -6,7 +6,8 @@ const IMG = '/blog/data-agent-answer-key'
 const TITLE = "I Gave My Data Agent an Answer Key. Fluent Wasn't the Same as Correct."
 const DESCRIPTION =
   'I tested a Fabric data agent on 1,851,282 flights with 8 questions and an answer key. Three were exact. The rest taught me where the agent ends and the model begins.'
-const OG_ALT = 'Round 2: only routes with at least 100 flights in both months'
+const OG_ALT =
+  'Eight answer rows: three checked, four unchecked, and one flagged in red'
 
 // Pixel sizes of the images in public/blog/data-agent-answer-key/
 const SIZE = {
@@ -32,13 +33,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-11-23',
     authors: ['Karthik Pandy'],
-    images: [{ url: `${IMG}/routes-after.png`, ...SIZE.routesAfter, alt: OG_ALT }],
+    images: [{ url: `${IMG}/og.jpg`, width: 1200, height: 630, alt: OG_ALT }],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: DESCRIPTION,
-    images: [`${IMG}/routes-after.png`],
+    images: [`${IMG}/og.jpg`],
   },
 }
 
@@ -228,7 +229,11 @@ export default function DataAgentAnswerKeyPage() {
             My model has no month field. The agent built one itself from the flight date and
             applied the 100-flight rule exactly as instructed.
           </p>
-          <Figure src={`${IMG}/routes-after.png`} alt={OG_ALT} {...SIZE.routesAfter} />
+          <Figure
+            src={`${IMG}/routes-after.png`}
+            alt="Round 2: only routes with at least 100 flights in both months"
+            {...SIZE.routesAfter}
+          />
           <p>
             <strong>Worst airline:</strong> still NK.
           </p>
