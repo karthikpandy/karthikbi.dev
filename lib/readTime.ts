@@ -18,4 +18,5 @@ export const readTime: Record<string, string> = {
   'pbip-git-workflow-skills': '2 min',
   'unused-measures-tool': '2 min',
   'agent-built-power-bi-report': '3 min',
+  'data-agent-answer-key': '3 min',
 }

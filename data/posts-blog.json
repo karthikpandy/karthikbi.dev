@@ -142,5 +142,14 @@
     "status": "live",
     "date": "2026-11-16",
     "url": "/agent-built-power-bi-report"
+  },
+  {
+    "slug": "data-agent-answer-key",
+    "title": "I Gave My Data Agent an Answer Key. Fluent Wasn't the Same as Correct.",
+    "description": "I tested a Fabric data agent on 1,851,282 flights with 8 questions and an answer key. Three were exact. The rest taught me where the agent ends and the model begins.",
+    "tags": ["Power BI", "Microsoft Fabric"],
+    "status": "live",
+    "date": "2026-11-23",
+    "url": "/data-agent-answer-key"
   }
 ]
